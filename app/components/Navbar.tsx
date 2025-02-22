@@ -7,13 +7,13 @@ import {
   RainbowKitProvider,
 } from "@rainbow-me/rainbowkit";
 import { WagmiProvider } from "wagmi";
-import { sepolia } from "wagmi/chains";
+import { sepolia, scrollSepolia } from "wagmi/chains";
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
 
 const config = getDefaultConfig({
   appName: "Fund Me",
   projectId: "14ff0bb587a0b38929bfd4c86b557327",
-  chains: [sepolia],
+  chains: [sepolia, scrollSepolia],
   ssr: false, // If your dApp uses server side rendering (SSR)
 });
 
